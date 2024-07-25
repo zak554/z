@@ -14,7 +14,7 @@ class AIVoiceAssistant:
         self._qdrant_url = "http://localhost:6333"
         self._client = QdrantClient(url=self._qdrant_url, prefer_grpc=False)
         self._llm = Ollama(model="mistral", request_timeout=120.0)
-        self._service_context = ServiceContext.from_defaults(llm=self._llm, embed_model="local")
+        self._service_context = ServiceContext.from_defaults(llm=self._llm, embed_model="all-MiniLM-L6-v2")
         self._index = None
         self._create_kb()
         self._create_chat_engine()
