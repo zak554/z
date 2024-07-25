@@ -3,7 +3,7 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core import SimpleDirectoryReader
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core import ServiceContext, VectorStoreIndex
-from llama_index.core.indices.vector_stores.qdrant import QdrantVectorStore
+from llama_index.vector_stores.qdrant import QdrantVectorStore
 from llama_index.core.storage.storage_context import StorageContext
 
 import warnings
